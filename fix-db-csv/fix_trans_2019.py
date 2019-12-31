@@ -78,7 +78,7 @@ if __name__ == "__main__":
     writer = csv.writer(sys.stdout, delimiter=";")
 
     # Write CSV header
-    writer.writerow(["Date", "Payee", "Category", "Memo", "Outflow", "Inflow"])
+    writer.writerow(["Date", "Contact", "Description", "Diff", "Currency"])
 
     # Convert all lines and output
     for row in reader:
